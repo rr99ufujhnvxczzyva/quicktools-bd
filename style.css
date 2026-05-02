@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+
+}
+header{
+background-color: #2563eb;
+color: white;
+text-align: center;
+padding: 40px 20px;
+
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+header p {
+font-size: 16px;
+}
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.tool-card {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+}
+.tool-card h2{
+
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+textarea {
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+.result-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.result-box p {
+    background-color: #eef4ff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+.result-box span {
+color: #2563eb;
+}
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #1d4ed8;
+}
+
+#clearBtn {
+  background-color: #ef4444;
+}
+
+#clearBtn:hover {
+  background-color: #dc2626;
+}
+.tool-card {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+#ageBtn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#ageBtn:hover {
+  background-color: #1d4ed8;
+}
+
+.single-result {
+  margin-top: 15px;
+  background-color: #eef4ff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #2563eb;
+}
+#bmiBtn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#bmiBtn:hover {
+  background-color: #1d4ed8;
+}
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+
+#generatePasswordBtn,
+#copyPasswordBtn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+#generatePasswordBtn:hover,
+#copyPasswordBtn:hover {
+  background-color: #1d4ed8;
+}
+
+#copyPasswordBtn {
+  background-color: #16a34a;
+}
+
+#copyPasswordBtn:hover {
+  background-color: #15803d;
+}
+#darkModeBtn {
+  margin-top: 15px;
+  background-color: white;
+  color: #2563eb;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#darkModeBtn:hover {
+  background-color: #eef4ff;
+}
+
+body.dark-mode {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+body.dark-mode .tool-card {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark-mode .tool-card h2 {
+  color: #93c5fd;
+}
+
+body.dark-mode textarea,
+body.dark-mode input {
+  background-color: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+body.dark-mode textarea:focus,
+body.dark-mode input:focus {
+  border-color: #60a5fa;
+}
+
+body.dark-mode .result-box p,
+body.dark-mode .single-result {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+body.dark-mode .result-box span {
+  color: #93c5fd;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 25px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .tool-card {
+    padding: 18px;
+  }
+
+  .tool-card h2 {
+    font-size: 22px;
+  }
+
+  textarea {
+    height: 140px;
+    font-size: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  #ageBtn,
+  #bmiBtn,
+  #generatePasswordBtn,
+  #copyPasswordBtn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .result-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .result-box p,
+  .single-result {
+    font-size: 15px;
+  }
+
+  input {
+    font-size: 15px;
+  }
+}
