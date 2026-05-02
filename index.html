@@ -16,78 +16,85 @@
             
         </header>
         <main>
-            <section class="tool-card">
-                <h2> Word & Character Counter</h2>
-                <section class="tool-card">
-                <h2>Age Calculator</h2>
+           
 
-                <label for="birthDate">Select your date of birth:</label>
-                <input type="date" id="birthDate">
- 
-                <button id="ageBtn">Calculate Age</button>
+  <section class="tool-card">
+    <h2>Word & Character Counter</h2>
 
-                <p class="single-result" id="ageResult">Your age will show here.</p>
-                </section>
-                <section class="tool-card">
-                <h2>BMI Calculator</h2>
+    <textarea id="textInput" spellcheck="false" placeholder="Write or paste your text here..."></textarea>
 
-                <label for="heightInput">Enter your height in cm:</label>
-             <input type="number" id="heightInput" placeholder="Example: 165">
+    <div class="button-group">
+      <button id="upperBtn">UPPERCASE</button>
+      <button id="lowerBtn">lowercase</button>
+      <button id="clearBtn">Clear</button>
+    </div>
 
-             <label for="weightInput">Enter your weight in kg:</label>
-             <input type="number" id="weightInput" placeholder="Example: 60">
+    <div class="result-box">
+      <p>Character: <span id="charCount">0</span></p>
+      <p>Words: <span id="wordCount">0</span></p>
+    </div>
+  </section>
 
-             <button id="bmiBtn">Calculate BMI</button>
+  <section class="tool-card">
+    <h2>Age Calculator</h2>
 
-            <p class="single-result" id="bmiResult">Your BMI result will show here.</p>
-            </section>
-            <section class="tool-card">
-  <h2>Password Generator</h2>
+    <label for="birthDate">Select your date of birth:</label>
+    <input type="date" id="birthDate">
 
-  <label for="passwordLength">Password length:</label>
-  <input type="number" id="passwordLength" value="12" min="4" max="30">
+    <button id="ageBtn">Calculate Age</button>
+
+    <p class="single-result" id="ageResult">Your age will show here.</p>
+  </section>
+
+  <section class="tool-card">
+    <h2>BMI Calculator</h2>
+
+    <label for="heightInput">Enter your height in cm:</label>
+    <input type="number" id="heightInput" placeholder="Example: 165">
+
+    <label for="weightInput">Enter your weight in kg:</label>
+    <input type="number" id="weightInput" placeholder="Example: 60">
+
+    <button id="bmiBtn">Calculate BMI</button>
+
+    <p class="single-result" id="bmiResult">Your BMI result will show here.</p>
+  </section>
+
+  <section class="tool-card">
+    <h2>Password Generator</h2>
+
+    <label for="passwordLength">Password length:</label>
+    <input type="number" id="passwordLength" value="12" min="4" max="30">
 
     <div class="checkbox-group">
-    <label>
-     <input type="checkbox" id="includeUppercase" checked>
-      Include uppercase letters
-            </label>
+      <label>
+        <input type="checkbox" id="includeUppercase" checked>
+        Include uppercase letters
+      </label>
 
-          <label>
-          <input type="checkbox" id="includeLowercase" checked>
-             Include lowercase letters
-             </label>
+      <label>
+        <input type="checkbox" id="includeLowercase" checked>
+        Include lowercase letters
+      </label>
 
-            <label>
-             <input type="checkbox" id="includeNumbers" checked>
-             Include numbers
-             </label>
+      <label>
+        <input type="checkbox" id="includeNumbers" checked>
+        Include numbers
+      </label>
 
-              <label>
-              <input type="checkbox" id="includeSymbols">
-              Include symbols
-                </label>
-                </div>
+      <label>
+        <input type="checkbox" id="includeSymbols">
+        Include symbols
+      </label>
+    </div>
 
-                <button id="generatePasswordBtn">Generate Password</button>
-                <button id="copyPasswordBtn">Copy Password</button>
+    <button id="generatePasswordBtn">Generate Password</button>
+    <button id="copyPasswordBtn">Copy Password</button>
 
-                <p class="single-result" id="passwordResult">Your password will show here.</p>
-                </section>
-                <textarea id="textInput" spellcheck="false" placeholder="Write or paste your text here..."></textarea>
-                <div class="button-group">
-                <button id="upperBtn">UPPERCASE</button>
-                <button id="lowerBtn">lowercase</button>
-                <button id="clearBtn">Clear</button>
-                </div>
-                <div class="result-box">
-                <p>Character: <span id="charCount">0</span></p>
-                <p>Words:<span
-                id="wordCount">0</span></p>
+    <p class="single-result" id="passwordResult">Your password will show here.</p>
+  </section>
 
 
-            </div>
-            </section>
         </main>
           <script src="script.js"></script>
 </body>
